@@ -3,12 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal ToDo App</title>
+    <title>Personal Task Manager</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="app-shell">
-      <h1>ToDo</h1>
+      <div class="header-row">
+        <div>
+          <h1>Personal Task Manager</h1>
+          <p class="subtitle">
+            Organize priorities with a clean, reliable task list.
+          </p>
+        </div>
+        <div class="header-actions">
+          <button
+            id="theme-toggle-button"
+            class="secondary-button"
+            type="button"
+          >
+            Dark mode
+          </button>
+          <button id="clear-button" class="secondary-button" type="button">
+            Clear All
+          </button>
+        </div>
+      </div>
+
+      <div class="summary-row" aria-live="polite">
+        <span id="summary-text" class="summary-text">No tasks yet.</span>
+      </div>
 
       <form id="todo-form" class="todo-form">
         <input
@@ -16,8 +39,9 @@
           type="text"
           placeholder="Add a new task"
           autocomplete="off"
+          aria-label="New task"
         />
-        <button type="submit">Add</button>
+        <button type="submit">Add task</button>
       </form>
 
       <div id="message" class="message" aria-live="polite"></div>
