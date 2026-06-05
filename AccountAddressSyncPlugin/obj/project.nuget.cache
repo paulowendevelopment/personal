@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HJuZaSMA+Ec=",
+  "dgSpecHash": "ZEmKe8gp1i0=",
   "success": true,
-  "projectFilePath": "/Users/paulowen/RepoMacMini/AccountAddressSyncPlugin/AccountAddressSyncPlugin.csproj",
+  "projectFilePath": "/Users/paulowen/Repo/personal/AccountAddressSyncPlugin/AccountAddressSyncPlugin.csproj",
   "expectedPackageFiles": [
     "/Users/paulowen/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/Users/paulowen/.nuget/packages/microsoft.crmsdk.coreassemblies/9.0.2.52/microsoft.crmsdk.coreassemblies.9.0.2.52.nupkg.sha512",

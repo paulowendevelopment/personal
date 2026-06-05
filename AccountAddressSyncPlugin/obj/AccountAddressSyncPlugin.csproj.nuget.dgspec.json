@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/paulowen/RepoMacMini/AccountAddressSyncPlugin/AccountAddressSyncPlugin.csproj": {}
+    "/Users/paulowen/Repo/personal/AccountAddressSyncPlugin/AccountAddressSyncPlugin.csproj": {}
   },
   "projects": {
-    "/Users/paulowen/RepoMacMini/AccountAddressSyncPlugin/AccountAddressSyncPlugin.csproj": {
+    "/Users/paulowen/Repo/personal/AccountAddressSyncPlugin/AccountAddressSyncPlugin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/paulowen/RepoMacMini/AccountAddressSyncPlugin/AccountAddressSyncPlugin.csproj",
+        "projectUniqueName": "/Users/paulowen/Repo/personal/AccountAddressSyncPlugin/AccountAddressSyncPlugin.csproj",
         "projectName": "AccountAddressSyncPlugin",
-        "projectPath": "/Users/paulowen/RepoMacMini/AccountAddressSyncPlugin/AccountAddressSyncPlugin.csproj",
+        "projectPath": "/Users/paulowen/Repo/personal/AccountAddressSyncPlugin/AccountAddressSyncPlugin.csproj",
         "packagesPath": "/Users/paulowen/.nuget/packages/",
-        "outputPath": "/Users/paulowen/RepoMacMini/AccountAddressSyncPlugin/obj/",
+        "outputPath": "/Users/paulowen/Repo/personal/AccountAddressSyncPlugin/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/paulowen/.nuget/NuGet/NuGet.Config"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "net462": {
+            "framework": "net462",
             "targetAlias": "net462",
             "projectReferences": {}
           }
@@ -37,10 +38,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net462": {
+          "framework": "net462",
           "targetAlias": "net462",
           "dependencies": {
             "Microsoft.CrmSdk.CoreAssemblies": {
@@ -58,7 +61,7 @@
               "version": "[1.0.640, )"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }
