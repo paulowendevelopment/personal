@@ -12,4 +12,7 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/Users/paulowen/.nuget/packages/" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Pkgspkl Condition=" '$(Pkgspkl)' == '' ">/Users/paulowen/.nuget/packages/spkl/1.0.640</Pkgspkl>
+  </PropertyGroup>
 </Project>

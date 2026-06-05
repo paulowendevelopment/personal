@@ -53,6 +53,9 @@
           }
         }
       },
+      "Microsoft.CrmSdk.CoreTools/9.1.0.79": {
+        "type": "package"
+      },
       "Microsoft.NETFramework.ReferenceAssemblies/1.0.3": {
         "type": "package",
         "dependencies": {
@@ -63,6 +66,12 @@
         "type": "package",
         "build": {
           "build/Microsoft.NETFramework.ReferenceAssemblies.net462.targets": {}
+        }
+      },
+      "spkl/1.0.640": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CrmSdk.CoreTools": "9.1.0.79"
         }
       },
       "System.Buffers/4.5.1": {
@@ -255,6 +264,40 @@
         "lib/net462/Microsoft.Xrm.Sdk.xml",
         "microsoft.crmsdk.coreassemblies.9.0.2.52.nupkg.sha512",
         "microsoft.crmsdk.coreassemblies.nuspec"
+      ]
+    },
+    "Microsoft.CrmSdk.CoreTools/9.1.0.79": {
+      "sha512": "m6/9wZSa7HYwPipod4ZkS87r5UqGZDgkuGHjrJtEvpLWrh8jO1SSq6b1SlJLEaiUE7zWK6AJd99/IH765bTTvA==",
+      "type": "package",
+      "path": "microsoft.crmsdk.coretools/9.1.0.79",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/bin/coretools/CrmSvcUtil.exe",
+        "content/bin/coretools/CrmSvcUtil.exe.config",
+        "content/bin/coretools/CrmSvcUtil.xml",
+        "content/bin/coretools/LicenseTerms.docx",
+        "content/bin/coretools/Microsoft.ApplicationInsights.dll",
+        "content/bin/coretools/Microsoft.Crm.Sdk.Proxy.dll",
+        "content/bin/coretools/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+        "content/bin/coretools/Microsoft.PowerPlatform.Tooling.BatchedTelemetry.dll",
+        "content/bin/coretools/Microsoft.Rest.ClientRuntime.dll",
+        "content/bin/coretools/Microsoft.Xrm.Sdk.Deployment.dll",
+        "content/bin/coretools/Microsoft.Xrm.Sdk.dll",
+        "content/bin/coretools/Microsoft.Xrm.Tooling.Connector.dll",
+        "content/bin/coretools/Microsoft.Xrm.Tooling.CrmConnectControl.dll",
+        "content/bin/coretools/Microsoft.Xrm.Tooling.Ui.Styles.dll",
+        "content/bin/coretools/Newtonsoft.Json.dll",
+        "content/bin/coretools/Other Redistributable.txt",
+        "content/bin/coretools/SolutionPackager.exe",
+        "content/bin/coretools/SolutionPackager.exe.config",
+        "content/bin/coretools/SolutionPackagerLib.dll",
+        "content/bin/coretools/System.Diagnostics.DiagnosticSource.dll",
+        "content/bin/coretools/System.ValueTuple.dll",
+        "content/bin/coretools/pacTelemetryUpload.exe",
+        "content/bin/coretools/pacTelemetryUpload.exe.config",
+        "microsoft.crmsdk.coretools.9.1.0.79.nupkg.sha512",
+        "microsoft.crmsdk.coretools.nuspec"
       ]
     },
     "Microsoft.NETFramework.ReferenceAssemblies/1.0.3": {
@@ -595,6 +638,48 @@
         "microsoft.netframework.referenceassemblies.net462.nuspec"
       ]
     },
+    "spkl/1.0.640": {
+      "sha512": "C3FtQBEXtH3W3QAkqOZeUTP89Yn+zxW7Ow7/HohC6HR0SpsMwTSgcvhFhvkbXSB35pngQsyYHF1mjLCuphpeog==",
+      "type": "package",
+      "path": "spkl/1.0.640",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/CrmPluginRegistrationAttribute.cs",
+        "content/spkl.json",
+        "content/spkl/deploy-plugins.bat",
+        "content/spkl/deploy-webresources.bat",
+        "content/spkl/deploy-workflows.bat",
+        "content/spkl/download-webresources.bat",
+        "content/spkl/earlybound.bat",
+        "content/spkl/instrument-plugin-code.bat",
+        "content/spkl/pack+import.bat",
+        "content/spkl/unpack.bat",
+        "spkl.1.0.640.nupkg.sha512",
+        "spkl.nuspec",
+        "tools/CmdLine.dll",
+        "tools/Microsoft.Crm.Sdk.Proxy.dll",
+        "tools/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tools/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+        "tools/Microsoft.Xrm.Sdk.Deployment.dll",
+        "tools/Microsoft.Xrm.Sdk.Workflow.dll",
+        "tools/Microsoft.Xrm.Sdk.dll",
+        "tools/Microsoft.Xrm.Tooling.Connector.dll",
+        "tools/Microsoft.Xrm.Tooling.CrmConnectControl.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/SparkleXrm.Tasks.dll",
+        "tools/System.Net.Http.dll",
+        "tools/System.Security.Cryptography.Algorithms.dll",
+        "tools/System.Security.Cryptography.Encoding.dll",
+        "tools/System.Security.Cryptography.Primitives.dll",
+        "tools/System.Security.Cryptography.X509Certificates.dll",
+        "tools/netstandard.dll",
+        "tools/spkl.CrmSvcUtilExtensions.dll",
+        "tools/spkl.exe",
+        "tools/spkl.exe.config"
+      ]
+    },
     "System.Buffers/4.5.1": {
       "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
@@ -887,7 +972,8 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.2": [
       "Microsoft.CrmSdk.CoreAssemblies >= 9.0.2.52",
-      "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.3"
+      "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.3",
+      "spkl >= 1.0.640"
     ]
   },
   "packageFolders": {
@@ -941,6 +1027,10 @@
             "target": "Package",
             "version": "[1.0.3, )",
             "autoReferenced": true
+          },
+          "spkl": {
+            "target": "Package",
+            "version": "[1.0.640, )"
           }
         },
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/RuntimeIdentifierGraph.json"

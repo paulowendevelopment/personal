@@ -1,9 +1,18 @@
 using System;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
-
 namespace AccountAddressSyncPlugin
 {
+    [CrmPluginRegistration(
+        MessageNameEnum.Update,
+        "account",
+        StageEnum.PostOperation,
+        ExecutionModeEnum.Synchronous,
+        "address1_line1,address1_line2,address1_line3,address1_city,address1_stateorprovince,address1_postalcode,address1_country",
+        "AccountAddressSyncPlugin.AddressChangePlugin: Update of account",
+        1,
+        IsolationModeEnum.Sandbox,
+        Description = "Syncs address changes from Account to related Contacts")]
     public class AddressChangePlugin : IPlugin
     {
         private static readonly string[] AddressFields = new[]
@@ -66,6 +75,10 @@ namespace AccountAddressSyncPlugin
                 var update = new Entity("contact", contact.Id);
                 foreach (var field in AddressFields)
                     update[field] = account.Contains(field) ? account[field] : null;
+
+                var line3 = account.GetAttributeValue<string>("address1_line3");
+                if (string.IsNullOrWhiteSpace(line3))
+                    update["description"] = "Address has Changed";
 
                 service.Update(update);
             }
