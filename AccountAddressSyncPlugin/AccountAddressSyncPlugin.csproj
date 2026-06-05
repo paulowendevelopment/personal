@@ -3,6 +3,8 @@
     <TargetFramework>net462</TargetFramework>
     <OutputType>Library</OutputType>
     <AssemblyName>AccountAddressSyncPlugin</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>AccountAddressSyncPlugin.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.52" />
