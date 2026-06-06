@@ -1,8 +1,5 @@
 is_global = true
 build_property.RootNamespace = AccountAddressSyncPlugin
-build_property.ProjectDir = /Users/paulowen/Repo/personal/AccountAddressSyncPlugin/
+build_property.ProjectDir = /Users/paulowen/RepoMacMini/AccountAddressSyncPlugin/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 

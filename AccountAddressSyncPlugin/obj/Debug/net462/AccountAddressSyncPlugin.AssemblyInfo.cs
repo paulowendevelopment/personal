@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AccountAddressSyncPlugin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+038958b3a12713ae56a64026ed2dffe775331e91")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f978b7a338c0d207b5fbc21a43202bb7cc2e0714")]
 [assembly: System.Reflection.AssemblyProductAttribute("AccountAddressSyncPlugin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AccountAddressSyncPlugin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
